@@ -15,9 +15,9 @@ Prerequisites
 Definition of Parametrized Workflow
 ===================================
 
-Parametrized workflow is nothing more than workflow function that accepts parameters.
+A parametrized workflow is nothing more than a workflow function that accepts parameters.
 
-As an example of parametrized workflow with 1 task, you can define one as follows:
+As an example of a parametrized workflow with 1 task, you can define one as follows:
 
 .. literalinclude:: ../examples/tests/test_parametrized_workflows.py
     :start-after: def parametrized_workflow():
@@ -32,8 +32,8 @@ Execute Workflow
 ================
 
 Then, run the following snippet in your ``python`` REPL or a Python script.
-It loads your workflow definition, and executes it on local Ray cluster, waits for it to finish
-and prints out results
+It loads your workflow definition and executes it on local Ray cluster.
+Later we'll retrieve the results.
 
 
 .. literalinclude:: ../examples/tests/test_parametrized_workflows.py
@@ -44,15 +44,13 @@ and prints out results
 
 .. warning::
 
-    Parametrized workflows can be submitted only via Python API. Currently, it is not
+    Parametrized workflows can only be submitted via the Python API. Currently, it is not
     possible to submit parametrized workflows via the CLI.
 
 
 Get Results
 ===========
-The workflow is executed in the background.
-To get the calculated values, either follow the instruction in :doc:`started Ray<ray>`.
-or run the following
+The workflow is executed in the background. To get the calculated values, run the following:
 
 .. literalinclude:: ../examples/tests/test_parametrized_workflows.py
     :start-after: def get_results():

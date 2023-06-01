@@ -1,13 +1,13 @@
 ================
 Remote Workflows
 ================
-To access more compute power - you can submit your workflow to a remote runtime.
+You can submit your workflow to a remote runtime to access more compute power.
 
 Prerequisites
 =============
 
 #. You've :doc:`installed Orquestra Workflow SDK<installing-macos-linux>`.
-#. You have access to remote QE cluster
+#. You have access to a remote Orquestra cluster
 
 .. _cli_remote_login:
 
